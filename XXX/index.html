@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>?</title>
+
+        <style>
+            body {
+                background-color: #a52a2a;
+
+            }
+            .painel {
+                background-color: #fff;
+                width: 500px;
+                height: 500px;
+                margin: auto;
+                border-radius: 5px;
+                text-align: center;
+
+            }
+            h1 {
+                padding-top: 15px;
+            }
+            #s {
+
+                width: 60px;
+                height: 40px;
+                background-color: #a52a2a;
+                border-color: #fff;
+                border-radius: 5px;
+                color: #fff;
+                margin-left: -64px;
+            }
+            #n {
+                position: absolute;
+                width: 60px;
+                height: 40px;
+                background-color: #a52a2a;
+                border-color: #fff;
+                border-radius: 5px;
+                color: #fff;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="painel">
+            <h1>felis dia dos namorados</h1>
+            <img  src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif">
+            <h2>aceita namora comigo?</h2>
+            <a href="https://youtu.be/0mJMW2CzTiA?si=AZ0jhCA54oDyG7VR"><button id="s">Sim!</button></a>
+            <button  onmouseover="fuja()" id="n">Não</button>
+        </div>
+
+        <script>
+            function fuja(){
+                var bn = document.getElementById("n")
+                var lj = window.innerWidth
+                var aj = window.innerHeight
+                var maxx = lj - bn.offsetWidth
+                var maxy = aj - bn.offsetHeight
+                var aleatoriox = Math.floor(Math.random() * maxx)
+                var aleatorioy = Math.floor(Math.random() * maxy)
+                bn.style.left = aleatoriox + 'px'
+                bn.style.top = aleatorioy + 'px'
+            }
+        </script>
+
+    </body>
+</html>
